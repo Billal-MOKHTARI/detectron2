@@ -486,7 +486,7 @@ class Visualizer:
             output (VisImage): image object with visualizations.
         """
         pred = _PanopticPrediction(panoptic_seg, segments_info, self.metadata)
-
+        print(1)
         if self._instance_mode == ColorMode.IMAGE_BW:
             self.output.reset_image(self._create_grayscale_image(pred.non_empty_mask()))
 
